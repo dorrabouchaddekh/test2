@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     borderTopRadius: 40,
     height: '10%',
     width: '90%',
-    alignItems: 'center',
     justifyContent: 'center',
   },
   buttonSignUp: {
@@ -39,8 +38,8 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     height: '10%',
     width: '90%',
-    alignItems: 'center',
     justifyContent: 'center',
+
   },
   firstText: {
     fontSize: 30,

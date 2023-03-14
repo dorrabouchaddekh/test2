@@ -4,7 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import AuthentificationScreen from './screens/AuthentificationScreen.jsx';
 import WhoAreYou from './screens/WhoAreYou.jsx';
-
+import SignupFirstIndiv from './screens/signupindiv/SignupFirstIndiv.jsx';
+import SignupSecondIndiv from './screens/signupindiv/SignupSecondIndiv.jsx';
 const Stack = createStackNavigator();
 function NavStack() {
   return (
@@ -29,6 +30,16 @@ function NavStack() {
         //    borderBottomWidth: 0, // remove the default bottom border
         //  },
         }} />
+        <Stack.Screen
+        name="signupFirstIndiv"
+        component={SignupFirstIndiv}
+        options={{ headerShown: false }}
+      />
+        <Stack.Screen
+        name="signupSecondIndiv"
+        component={SignupSecondIndiv}
+        options={{ headerShown: false }}
+      />
 
     </Stack.Navigator>
   );
