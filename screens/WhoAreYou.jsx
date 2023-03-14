@@ -72,13 +72,11 @@ function WhoAreYou(props) {
           <View>
             <Image
               source={require('../assets/A.png')}
-              style={styles.headerImage}
+              justifyContent="center"
             />
-          </View>
-          <View>
             <Image
               source={require('../assets/AMANA.png')}
-              style={styles.headerImage}
+              justifyContent="center"
             />
           </View>
         </View>
@@ -96,27 +94,7 @@ function WhoAreYou(props) {
         <Text style={styles.secondText}>
           Tell us what kind of profile you would like
         </Text>
-       
-          <Card
-            containerStyle={{
-              backgroundColor: '#E7E7E0',
-              justifyContent: 'center',
-              width: '67%',
-              height: '38%',
-              borderRadius: 10,
-            }}>
-               <TouchableOpacity
-          onPress={() => navigation.navigate('signupFirstIndiv')}>
-            <View style={{alignItems: 'center', justifyContent: 'center'}}>
-              <Image source={require('../assets/Individual.png')} />
 
-              <Text style={styles.cardfirstText}>Individual</Text>
-              <Text style={styles.cardsecondText}>
-                Create a personal account
-              </Text>
-            </View>
-            </TouchableOpacity>
-          </Card>
         <Card
           containerStyle={{
             backgroundColor: '#E7E7E0',
@@ -126,21 +104,41 @@ function WhoAreYou(props) {
             borderRadius: 10,
           }}>
           <TouchableOpacity
-          onPress={() => navigation.navigate('authentificationScreen')}>
-          <View
-            style={{
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginTop: '1%',
-            }}>
-            <Image source={require('../assets/Organization.png')} />
+            onPress={() => navigation.navigate('signupFirstIndiv')}>
+            <View style={{alignItems: 'center', justifyContent: 'center'}}>
+              <Image source={require('../assets/Individual.png')} />
 
-            <Text style={styles.cardsecondfirstText}>Organization</Text>
-            <Text style={styles.cardsecondText}>
-              Create a public account for your
-            </Text>
-            <Text style={styles.cardthirdText}>organization</Text>
-          </View>
+              <Text style={styles.cardfirstText}>Individual</Text>
+              <Text style={styles.cardsecondText}>
+                Create a personal account
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </Card>
+        <Card
+          containerStyle={{
+            backgroundColor: '#E7E7E0',
+            justifyContent: 'center',
+            width: '67%',
+            height: '38%',
+            borderRadius: 10,
+          }}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('authentificationScreen')}>
+            <View
+              style={{
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginTop: '1%',
+              }}>
+              <Image source={require('../assets/Organization.png')} />
+
+              <Text style={styles.cardsecondfirstText}>Organization</Text>
+              <Text style={styles.cardsecondText}>
+                Create a public account for your
+              </Text>
+              <Text style={styles.cardthirdText}>organization</Text>
+            </View>
           </TouchableOpacity>
         </Card>
       </View>
